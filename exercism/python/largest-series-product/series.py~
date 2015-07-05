@@ -1,0 +1,5 @@
+def largest_product(series, slice_size):
+    pass
+
+
+"""

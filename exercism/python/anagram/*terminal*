@@ -1,0 +1,1301 @@
+bash-3.2$ ls 
+Applications    Documents       Library         Music           Public          exercism
+Desktop         Downloads       Movies          Pictures        Sites           mp
+bash-3.2$ cd ./mp/github
+bash-3.2$ ls
+i-am-a-horse-in-the-land-of-booleans    practice_problems                       structured-data                         training-day
+bash-3.2$ cd ./mp/exercism
+bash: cd: ./mp/exercism: No such file or directory
+bash-3.2$ cd ../exercism
+bash-3.2$ ls
+clojure         csharp          fsharp          java            lua             perl5           ruby
+coffeescript    elixir          go              javascript      objective-c     plsql           scala
+cpp             erlang          haskell         lisp            ocaml           python          swift
+bash-3.2$ cd ./python
+bash-3.2$ ls
+bob
+bash-3.2$ cd ./bob
+bash-3.2$ ls
+README.md       bob.py          bob.pyc         bob_test.py
+bash-3.2$ exercism submit bob.py
+2015/02/25 22:14:45 Cannot submit - unable to identify track and problem.
+
+Please leave the solution within the problem directory that was created by 'exercism fetch'
+bash-3.2$ exercism fetch
+
+unchanged: 27, updated: 0, new: 0
+
+bash-3.2$ ls
+README.md       bob.py          bob.pyc         bob_test.py
+bash-3.2$ cd ~
+bash-3.2$ ls
+Applications    Downloads       Music           Sites
+Desktop         Library         Pictures        mp
+Documents       Movies          Public
+bash-3.2$ cd exercism
+bash: cd: exercism: No such file or directory
+bash-3.2$ ls
+Applications    Downloads       Music           Sites
+Desktop         Library         Pictures        mp
+Documents       Movies          Public
+bash-3.2$ ls
+Applications    Downloads       Music           Sites
+Desktop         Library         Pictures        exercism
+Documents       Movies          Public          mp
+bash-3.2$ cd exercism/python
+bash-3.2$ ls
+bob                     leap                    word-count
+gigasecond              meetup
+hamming                 rna-transcription
+bash-3.2$ exercism submit bob.py
+2015/02/25 22:20:45 lstat /Users/andreawerner/exercism/python/bob.py: no such fi
+le or directory                                                                
+bash-3.2$ cd ./bob
+bash-3.2$ ls
+README.md       bob.py          bob.pyc         bob_test.py
+bash-3.2$ exercism submit bob.py
+
+Submitted Bob in Python.
+Your submission can be found online at http://exercism.io/submissions/61b189deac
+6e463db99bb508f329c644                                                         
+
+To get the next exercise, run "exercism fetch" again.
+bash-3.2$ 
+bash-3.2$ ls   
+README.md       bob.py          bob.pyc         bob_test.py
+bash-3.2$ cd ./
+bash-3.2$ cd //
+bash-3.2$ cd ..
+bash-3.2$ ls
+Applications                    dev
+Incompatible Software           etc
+Library                         home
+Network                         installer.failurerequests
+System                          net
+User Guides And Information     private
+Users                           sbin
+Volumes                         tmp
+bin                             usr
+cores                           var
+bash-3.2$ cd ./users
+bash-3.2$ ls
+Guest           Shared          andreawerner
+bash-3.2$ cd ./andreawerner
+bash-3.2$ ls
+Applications    Downloads       Music           Sites
+Desktop         Library         Pictures        exercism
+Documents       Movies          Public          mp
+bash-3.2$ cd ./exercism/python/leap
+bash-3.2$ ls
+README.md       leap_test.py    year.py         year.pyc
+bash-3.2$ python leap_test.py
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+bash-3.2$ exercism submit leap.py
+2015/02/25 22:33:34 lstat /users/andreawerner/exercism/python/leap/leap.py: no s
+uch file or directory                                                          
+bash-3.2$ ls
+README.md       leap_test.py    year.py         year.pyc
+bash-3.2$ exercism submit leap.py
+2015/02/25 22:33:50 lstat /users/andreawerner/exercism/python/leap/leap.py: no 
+such file or directory                                                        
+bash-3.2$ 
+bash-3.2$ exercism submit year.py
+
+Submitted Leap in Python.
+Your submission can be found online at http://exercism.io/submissions/f034e18f5
+c654295b39384c0785e861e                                                       
+
+To get the next exercise, run "exercism fetch" again.
+bash-3.2$ cd ..
+bash-3.2$ ls
+bob                     leap                    word-count
+gigasecond              meetup
+hamming                 rna-transcription
+bash-3.2$ cd ./word-count
+bash-3.2$ ls
+README.md               wordcount.py
+word_count_test.py      wordcount.pyc
+bash-3.2$ cd ..
+bash-3.2$ ls
+bob                     leap                    word-count
+gigasecond              meetup
+hamming                 rna-transcription
+bash-3.2$ cd ./leap
+bash-3.2$ exercism submit leap.py
+2015/02/25 22:46:08 lstat /users/andreawerner/exercism/python/leap/leap.py: no 
+such file or directory                                                        
+bash-3.2$ exercism submit year.py
+
+Submitted Leap in Python.
+Your submission can be found online at http://exercism.io/submissions/0d30dfbbb
+0664c6ea35d599cfd11adfd                                                       
+
+To get the next exercise, run "exercism fetch" again.
+bash-3.2$ exercism submit gigasecond.py
+2015/02/25 22:48:29 lstat /users/andreawerner/exercism/python/leap/gigasecond.p
+y: no such file or directory                                                  
+bash-3.2$ ls
+README.md       leap_test.py    year.py         year.pyc
+bash-3.2$ cd ..
+bash-3.2$ ls
+bob                     leap                    word-count
+gigasecond              meetup
+hamming                 rna-transcription
+bash-3.2$ cd ./gigasecond
+bash-3.2$ ls
+README.md               gigasecond.pyc
+gigasecond.py           gigasecond_test.py
+bash-3.2$ exercism submit gigasecond.py
+
+Submitted Gigasecond in Python.
+Your submission can be found online at http://exercism.io/submissions/c9434577a
+6e347ca826846e8971a68e6                                                       
+
+To get the next exercise, run "exercism fetch" again.
+bash-3.2$ cd ..
+bash-3.2$ ls
+bob                     leap                    word-count
+gigasecond              meetup
+hamming                 rna-transcription
+bash-3.2$ cd ./hamming
+bash-3.2$ ls
+README.md       hamming.py      hamming.pyc     hamming_test.py
+bash-3.2$ python hamming_test.py
+FFFFF.F
+======================================================================
+FAIL: test_complete_hamming_distance_of_for_single_nucleotide_strand (__main__.H
+ammingTest)                                                                    
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "hamming_test.py", line 12, in test_complete_hamming_distance_of_for_sing
+le_nucleotide_strand                                                           
+    self.assertEqual(1, hamming.distance('A', 'G'))
+AssertionError: 1 != 0
+
+======================================================================
+FAIL: test_complete_hamming_distance_of_for_small_strand (__main__.HammingTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "hamming_test.py", line 15, in test_complete_hamming_distance_of_for_smal
+l_strand                                                                       
+    self.assertEqual(2, hamming.distance('AG', 'CT'))
+AssertionError: 2 != 0
+
+======================================================================
+FAIL: test_hamming_distance_in_very_long_strand (__main__.HammingTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "hamming_test.py", line 27, in test_hamming_distance_in_very_long_strand
+    self.assertEqual(9, hamming.distance('GGACGGATTCTG', 'AGGACGGATTCT'))
+AssertionError: 9 != 3
+
+======================================================================
+FAIL: test_large_hamming_distance (__main__.HammingTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "hamming_test.py", line 24, in test_large_hamming_distance
+    self.assertEqual(4, hamming.distance('GATACA', 'GCATAA'))
+AssertionError: 4 != 2
+
+======================================================================
+FAIL: test_no_difference_between_identical_strands (__main__.HammingTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "hamming_test.py", line 9, in test_no_difference_between_identical_strand
+s                                                                              
+    self.assertEqual(0, hamming.distance('A', 'A'))
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_small_hamming_distance_in_longer_strand (__main__.HammingTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "hamming_test.py", line 21, in test_small_hamming_distance_in_longer_stra
+nd                                                                             
+    self.assertEqual(1, hamming.distance('GGACG', 'GGTCG'))
+AssertionError: 1 != 4
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+FAILED (failures=6)
+bash-3.2$ python hamming_test.py
+FFFFF.F
+======================================================================
+FAIL: test_complete_hamming_distance_of_for_single_nucleotide_strand (__main__.H
+ammingTest)                                                                    
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "hamming_test.py", line 12, in test_complete_hamming_distance_of_for_sing
+le_nucleotide_strand                                                           
+    self.assertEqual(1, hamming.distance('A', 'G'))
+AssertionError: 1 != 0
+
+======================================================================
+FAIL: test_complete_hamming_distance_of_for_small_strand (__main__.HammingTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "hamming_test.py", line 15, in test_complete_hamming_distance_of_for_smal
+l_strand                                                                       
+    self.assertEqual(2, hamming.distance('AG', 'CT'))
+AssertionError: 2 != 0
+
+======================================================================
+FAIL: test_hamming_distance_in_very_long_strand (__main__.HammingTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "hamming_test.py", line 27, in test_hamming_distance_in_very_long_strand
+    self.assertEqual(9, hamming.distance('GGACGGATTCTG', 'AGGACGGATTCT'))
+AssertionError: 9 != 3
+
+======================================================================
+FAIL: test_large_hamming_distance (__main__.HammingTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "hamming_test.py", line 24, in test_large_hamming_distance
+    self.assertEqual(4, hamming.distance('GATACA', 'GCATAA'))
+AssertionError: 4 != 2
+
+======================================================================
+FAIL: test_no_difference_between_identical_strands (__main__.HammingTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "hamming_test.py", line 9, in test_no_difference_between_identical_strand
+s                                                                              
+    self.assertEqual(0, hamming.distance('A', 'A'))
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_small_hamming_distance_in_longer_strand (__main__.HammingTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "hamming_test.py", line 21, in test_small_hamming_distance_in_longer_stra
+nd                                                                             
+    self.assertEqual(1, hamming.distance('GGACG', 'GGTCG'))
+AssertionError: 1 != 4
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.002s
+
+FAILED (failures=6)
+bash-3.2$ python hamming_test.py
+FFFF.FF
+======================================================================
+FAIL: test_complete_hamming_distance_of_for_single_nucleotide_strand (__main__.H
+ammingTest)                                                                    
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "hamming_test.py", line 12, in test_complete_hamming_distance_of_for_sing
+le_nucleotide_strand                                                           
+    self.assertEqual(1, hamming.distance('A', 'G'))
+AssertionError: 1 != 0
+
+======================================================================
+FAIL: test_complete_hamming_distance_of_for_small_strand (__main__.HammingTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "hamming_test.py", line 15, in test_complete_hamming_distance_of_for_smal
+l_strand                                                                       
+    self.assertEqual(2, hamming.distance('AG', 'CT'))
+AssertionError: 2 != 0
+
+======================================================================
+FAIL: test_hamming_distance_in_very_long_strand (__main__.HammingTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "hamming_test.py", line 27, in test_hamming_distance_in_very_long_strand
+    self.assertEqual(9, hamming.distance('GGACGGATTCTG', 'AGGACGGATTCT'))
+AssertionError: 9 != 0
+
+======================================================================
+FAIL: test_large_hamming_distance (__main__.HammingTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "hamming_test.py", line 24, in test_large_hamming_distance
+    self.assertEqual(4, hamming.distance('GATACA', 'GCATAA'))
+AssertionError: 4 != 0
+
+======================================================================
+FAIL: test_small_hamming_distance (__main__.HammingTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "hamming_test.py", line 18, in test_small_hamming_distance
+    self.assertEqual(1, hamming.distance('AT', 'CT'))
+AssertionError: 1 != 0
+
+======================================================================
+FAIL: test_small_hamming_distance_in_longer_strand (__main__.HammingTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "hamming_test.py", line 21, in test_small_hamming_distance_in_longer_stra
+nd                                                                             
+    self.assertEqual(1, hamming.distance('GGACG', 'GGTCG'))
+AssertionError: 1 != 0
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+FAILED (failures=6)
+bash-3.2$ 
+bash-3.2$ python hamming_test.py
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK
+bash-3.2$ ls
+README.md       hamming.py      hamming.pyc     hamming_test.py
+bash-3.2$ exercism submit hamming.py
+
+Submitted Hamming in Python.
+Your submission can be found online at http://exercism.io/submissions/a976e91599
+f84e37b5ee9e81a57392f8                                                         
+
+To get the next exercise, run "exercism fetch" again.
+bash-3.2$ cd ..
+bash-3.2$ ls
+bob                     leap                    word-count
+gigasecond              meetup
+hamming                 rna-transcription
+bash-3.2$ cd ./meetup
+bash-3.2$ ls
+README.md       meetup.py       meetup_test.py
+bash-3.2$ python meetup_test.py
+EEEEEEEEE
+======================================================================
+ERROR: test_first_friday_of_december_2012 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 42, in test_first_friday_of_december_2012
+    meetup_day(2012, 12, 'Friday', '1st'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 31, in meetu
+p_day                                                                          
+    for i in len(focus_month):
+TypeError: 'int' object is not iterable
+
+======================================================================
+ERROR: test_first_tuesday_of_may_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 18, in test_first_tuesday_of_may_2013
+    meetup_day(2013, 5, 'Tuesday', '1st'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 27, in meetu
+p_day                                                                          
+    sixth_week = focus_month[5]
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_fourth_sunday_of_march_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 30, in test_fourth_sunday_of_march_2013
+    meetup_day(2013, 3, 'Sunday', '4th'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 27, in meetu
+p_day                                                                          
+    sixth_week = focus_month[5]
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_last_thursday_of_october_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 34, in test_last_thursday_of_october_2013
+    meetup_day(2013, 10, 'Thursday', 'last'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 27, in meetu
+p_day                                                                          
+    sixth_week = focus_month[5]
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_last_wednesday_of_february_2012 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 38, in test_last_wednesday_of_february_2012
+    meetup_day(2012, 2, 'Wednesday', 'last'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 27, in meetu
+p_day                                                                          
+    sixth_week = focus_month[5]
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_monteenth_of_may_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 10, in test_monteenth_of_may_2013
+    meetup_day(2013, 5, 'Monday', 'teenth'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 27, in meetu
+p_day                                                                          
+    sixth_week = focus_month[5]
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_saturteenth_of_february_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 14, in test_saturteenth_of_february_2013
+    meetup_day(2013, 2, 'Saturday', 'teenth'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 27, in meetu
+p_day                                                                          
+    sixth_week = focus_month[5]
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_second_monday_of_april_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 22, in test_second_monday_of_april_2013
+    meetup_day(2013, 4, 'Monday', '2nd'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 27, in meetu
+p_day                                                                          
+    sixth_week = focus_month[5]
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_third_thursday_of_september_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 26, in test_third_thursday_of_september_2013
+    meetup_day(2013, 9, 'Thursday', '3rd'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 31, in meetu
+p_day                                                                          
+    for i in len(focus_month):
+TypeError: 'int' object is not iterable
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.003s
+
+FAILED (errors=9)
+bash-3.2$ python meetup_test.py
+FEEEEEEEF
+======================================================================
+ERROR: test_first_tuesday_of_may_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 18, in test_first_tuesday_of_may_2013
+    meetup_day(2013, 5, 'Tuesday', '1st'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 27, in meetu
+p_day                                                                          
+    sixth_week = focus_month[5]
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_fourth_sunday_of_march_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 30, in test_fourth_sunday_of_march_2013
+    meetup_day(2013, 3, 'Sunday', '4th'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 27, in meetu
+p_day                                                                          
+    sixth_week = focus_month[5]
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_last_thursday_of_october_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 34, in test_last_thursday_of_october_2013
+    meetup_day(2013, 10, 'Thursday', 'last'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 27, in meetu
+p_day                                                                          
+    sixth_week = focus_month[5]
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_last_wednesday_of_february_2012 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 38, in test_last_wednesday_of_february_2012
+    meetup_day(2012, 2, 'Wednesday', 'last'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 27, in meetu
+p_day                                                                          
+    sixth_week = focus_month[5]
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_monteenth_of_may_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 10, in test_monteenth_of_may_2013
+    meetup_day(2013, 5, 'Monday', 'teenth'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 27, in meetu
+p_day                                                                          
+    sixth_week = focus_month[5]
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_saturteenth_of_february_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 14, in test_saturteenth_of_february_2013
+    meetup_day(2013, 2, 'Saturday', 'teenth'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 27, in meetu
+p_day                                                                          
+    sixth_week = focus_month[5]
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_second_monday_of_april_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 22, in test_second_monday_of_april_2013
+    meetup_day(2013, 4, 'Monday', '2nd'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 27, in meetu
+p_day                                                                          
+    sixth_week = focus_month[5]
+IndexError: list index out of range
+
+======================================================================
+FAIL: test_first_friday_of_december_2012 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 42, in test_first_friday_of_december_2012
+    meetup_day(2012, 12, 'Friday', '1st'))
+AssertionError: datetime.date(2012, 12, 7) != 0
+
+======================================================================
+FAIL: test_third_thursday_of_september_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 26, in test_third_thursday_of_september_2013
+    meetup_day(2013, 9, 'Thursday', '3rd'))
+AssertionError: datetime.date(2013, 9, 19) != 12
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.004s
+
+FAILED (failures=2, errors=7)
+bash-3.2$ python meetup_test.py
+EEEEEEEEF
+======================================================================
+ERROR: test_first_friday_of_december_2012 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 42, in test_first_friday_of_december_2012
+    meetup_day(2012, 12, 'Friday', '1st'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 35, in meetu
+p_day                                                                          
+    return date(year, month, days[0])
+ValueError: day is out of range for month
+
+======================================================================
+ERROR: test_first_tuesday_of_may_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 18, in test_first_tuesday_of_may_2013
+    meetup_day(2013, 5, 'Tuesday', '1st'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 27, in meetu
+p_day                                                                          
+    sixth_week = focus_month[5]
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_fourth_sunday_of_march_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 30, in test_fourth_sunday_of_march_2013
+    meetup_day(2013, 3, 'Sunday', '4th'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 27, in meetu
+p_day                                                                          
+    sixth_week = focus_month[5]
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_last_thursday_of_october_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 34, in test_last_thursday_of_october_2013
+    meetup_day(2013, 10, 'Thursday', 'last'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 27, in meetu
+p_day                                                                          
+    sixth_week = focus_month[5]
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_last_wednesday_of_february_2012 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 38, in test_last_wednesday_of_february_2012
+    meetup_day(2012, 2, 'Wednesday', 'last'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 27, in meetu
+p_day                                                                          
+    sixth_week = focus_month[5]
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_monteenth_of_may_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 10, in test_monteenth_of_may_2013
+    meetup_day(2013, 5, 'Monday', 'teenth'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 27, in meetu
+p_day                                                                          
+    sixth_week = focus_month[5]
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_saturteenth_of_february_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 14, in test_saturteenth_of_february_2013
+    meetup_day(2013, 2, 'Saturday', 'teenth'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 27, in meetu
+p_day                                                                          
+    sixth_week = focus_month[5]
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_second_monday_of_april_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 22, in test_second_monday_of_april_2013
+    meetup_day(2013, 4, 'Monday', '2nd'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 27, in meetu
+p_day                                                                          
+    sixth_week = focus_month[5]
+IndexError: list index out of range
+
+======================================================================
+FAIL: test_third_thursday_of_september_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 26, in test_third_thursday_of_september_2013
+    meetup_day(2013, 9, 'Thursday', '3rd'))
+AssertionError: datetime.date(2013, 9, 19) != datetime.date(2013, 9, 12)
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.003s
+
+FAILED (failures=1, errors=8)
+bash-3.2$ python meetup_test.py
+EE.FFFF.F
+======================================================================
+ERROR: test_first_friday_of_december_2012 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 42, in test_first_friday_of_december_2012
+    meetup_day(2012, 12, 'Friday', '1st'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 29, in meetu
+p_day                                                                          
+    return date(year, month, days[0])
+ValueError: day is out of range for month
+
+======================================================================
+ERROR: test_first_tuesday_of_may_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 18, in test_first_tuesday_of_may_2013
+    meetup_day(2013, 5, 'Tuesday', '1st'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 29, in meetu
+p_day                                                                          
+    return date(year, month, days[0])
+ValueError: day is out of range for month
+
+======================================================================
+FAIL: test_last_thursday_of_october_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 34, in test_last_thursday_of_october_2013
+    meetup_day(2013, 10, 'Thursday', 'last'))
+AssertionError: datetime.date(2013, 10, 31) != None
+
+======================================================================
+FAIL: test_last_wednesday_of_february_2012 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 38, in test_last_wednesday_of_february_2012
+    meetup_day(2012, 2, 'Wednesday', 'last'))
+AssertionError: datetime.date(2012, 2, 29) != None
+
+======================================================================
+FAIL: test_monteenth_of_may_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 10, in test_monteenth_of_may_2013
+    meetup_day(2013, 5, 'Monday', 'teenth'))
+AssertionError: datetime.date(2013, 5, 13) != None
+
+======================================================================
+FAIL: test_saturteenth_of_february_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 14, in test_saturteenth_of_february_2013
+    meetup_day(2013, 2, 'Saturday', 'teenth'))
+AssertionError: datetime.date(2013, 2, 16) != None
+
+======================================================================
+FAIL: test_third_thursday_of_september_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 26, in test_third_thursday_of_september_2013
+    meetup_day(2013, 9, 'Thursday', '3rd'))
+AssertionError: datetime.date(2013, 9, 19) != datetime.date(2013, 9, 12)
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.003s
+
+FAILED (failures=5, errors=2)
+bash-3.2$ python meetup_test.py
+EE...FF.F
+======================================================================
+ERROR: test_first_friday_of_december_2012 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 42, in test_first_friday_of_december_2012
+    meetup_day(2012, 12, 'Friday', '1st'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 29, in meetu
+p_day                                                                          
+    return date(year, month, days[0])
+ValueError: day is out of range for month
+
+======================================================================
+ERROR: test_first_tuesday_of_may_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 18, in test_first_tuesday_of_may_2013
+    meetup_day(2013, 5, 'Tuesday', '1st'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 29, in meetu
+p_day                                                                          
+    return date(year, month, days[0])
+ValueError: day is out of range for month
+
+======================================================================
+FAIL: test_monteenth_of_may_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 10, in test_monteenth_of_may_2013
+    meetup_day(2013, 5, 'Monday', 'teenth'))
+AssertionError: datetime.date(2013, 5, 13) != None
+
+======================================================================
+FAIL: test_saturteenth_of_february_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 14, in test_saturteenth_of_february_2013
+    meetup_day(2013, 2, 'Saturday', 'teenth'))
+AssertionError: datetime.date(2013, 2, 16) != None
+
+======================================================================
+FAIL: test_third_thursday_of_september_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 26, in test_third_thursday_of_september_2013
+    meetup_day(2013, 9, 'Thursday', '3rd'))
+AssertionError: datetime.date(2013, 9, 19) != datetime.date(2013, 9, 12)
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.003s
+
+FAILED (failures=3, errors=2)
+bash-3.2$ python meetup_test.py
+0
+E0
+E...FF.F
+======================================================================
+ERROR: test_first_friday_of_december_2012 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 42, in test_first_friday_of_december_2012
+    meetup_day(2012, 12, 'Friday', '1st'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 30, in meetu
+p_day                                                                          
+    return date(year, month, days[0])
+ValueError: day is out of range for month
+
+======================================================================
+ERROR: test_first_tuesday_of_may_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 18, in test_first_tuesday_of_may_2013
+    meetup_day(2013, 5, 'Tuesday', '1st'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 30, in meetu
+p_day                                                                          
+    return date(year, month, days[0])
+ValueError: day is out of range for month
+
+======================================================================
+FAIL: test_monteenth_of_may_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 10, in test_monteenth_of_may_2013
+    meetup_day(2013, 5, 'Monday', 'teenth'))
+AssertionError: datetime.date(2013, 5, 13) != None
+
+======================================================================
+FAIL: test_saturteenth_of_february_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 14, in test_saturteenth_of_february_2013
+    meetup_day(2013, 2, 'Saturday', 'teenth'))
+AssertionError: datetime.date(2013, 2, 16) != None
+
+======================================================================
+FAIL: test_third_thursday_of_september_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 26, in test_third_thursday_of_september_2013
+    meetup_day(2013, 9, 'Thursday', '3rd'))
+AssertionError: datetime.date(2013, 9, 19) != datetime.date(2013, 9, 12)
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.003s
+
+FAILED (failures=3, errors=2)
+bash-3.2$ python meetup_test.py
+days: 0
+Edays: 0
+E...FF.F
+======================================================================
+ERROR: test_first_friday_of_december_2012 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 42, in test_first_friday_of_december_2012
+    meetup_day(2012, 12, 'Friday', '1st'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 30, in meetu
+p_day                                                                          
+    return date(year, month, days[0])
+ValueError: day is out of range for month
+
+======================================================================
+ERROR: test_first_tuesday_of_may_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 18, in test_first_tuesday_of_may_2013
+    meetup_day(2013, 5, 'Tuesday', '1st'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 30, in meetu
+p_day                                                                          
+    return date(year, month, days[0])
+ValueError: day is out of range for month
+
+======================================================================
+FAIL: test_monteenth_of_may_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 10, in test_monteenth_of_may_2013
+    meetup_day(2013, 5, 'Monday', 'teenth'))
+AssertionError: datetime.date(2013, 5, 13) != None
+
+======================================================================
+FAIL: test_saturteenth_of_february_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 14, in test_saturteenth_of_february_2013
+    meetup_day(2013, 2, 'Saturday', 'teenth'))
+AssertionError: datetime.date(2013, 2, 16) != None
+
+======================================================================
+FAIL: test_third_thursday_of_september_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 26, in test_third_thursday_of_september_2013
+    meetup_day(2013, 9, 'Thursday', '3rd'))
+AssertionError: datetime.date(2013, 9, 19) != datetime.date(2013, 9, 12)
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.003s
+
+FAILED (failures=3, errors=2)
+bash-3.2$ python meetup_test.py
+days: 1
+Fdays: 1
+FEEEFFFF
+======================================================================
+ERROR: test_fourth_sunday_of_march_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 30, in test_fourth_sunday_of_march_2013
+    meetup_day(2013, 3, 'Sunday', '4th'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 26, in meetu
+p_day                                                                          
+    days.append(focus_month[i][weekdays[day]])
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_last_thursday_of_october_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 34, in test_last_thursday_of_october_2013
+    meetup_day(2013, 10, 'Thursday', 'last'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 38, in meetu
+p_day                                                                          
+    return date(year, month, days[-1])
+ValueError: day is out of range for month
+
+======================================================================
+ERROR: test_last_wednesday_of_february_2012 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 38, in test_last_wednesday_of_february_2012
+    meetup_day(2012, 2, 'Wednesday', 'last'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 38, in meetu
+p_day                                                                          
+    return date(year, month, days[-1])
+ValueError: day is out of range for month
+
+======================================================================
+FAIL: test_first_friday_of_december_2012 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 42, in test_first_friday_of_december_2012
+    meetup_day(2012, 12, 'Friday', '1st'))
+AssertionError: datetime.date(2012, 12, 7) != datetime.date(2012, 12, 1)
+
+======================================================================
+FAIL: test_first_tuesday_of_may_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 18, in test_first_tuesday_of_may_2013
+    meetup_day(2013, 5, 'Tuesday', '1st'))
+AssertionError: datetime.date(2013, 5, 7) != datetime.date(2013, 5, 1)
+
+======================================================================
+FAIL: test_monteenth_of_may_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 10, in test_monteenth_of_may_2013
+    meetup_day(2013, 5, 'Monday', 'teenth'))
+AssertionError: datetime.date(2013, 5, 13) != None
+
+======================================================================
+FAIL: test_saturteenth_of_february_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 14, in test_saturteenth_of_february_2013
+    meetup_day(2013, 2, 'Saturday', 'teenth'))
+AssertionError: datetime.date(2013, 2, 16) != None
+
+======================================================================
+FAIL: test_second_monday_of_april_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 22, in test_second_monday_of_april_2013
+    meetup_day(2013, 4, 'Monday', '2nd'))
+AssertionError: datetime.date(2013, 4, 8) != datetime.date(2013, 4, 9)
+
+======================================================================
+FAIL: test_third_thursday_of_september_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 26, in test_third_thursday_of_september_2013
+    meetup_day(2013, 9, 'Thursday', '3rd'))
+AssertionError: datetime.date(2013, 9, 19) != datetime.date(2013, 9, 13)
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.003s
+
+FAILED (failures=6, errors=3)
+bash-3.2$ python meetup_test.py
+days: 0
+Edays: 0
+E...FF.F
+======================================================================
+ERROR: test_first_friday_of_december_2012 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 42, in test_first_friday_of_december_2012
+    meetup_day(2012, 12, 'Friday', '1st'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 30, in meetu
+p_day                                                                          
+    return date(year, month, days[0])
+ValueError: day is out of range for month
+
+======================================================================
+ERROR: test_first_tuesday_of_may_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 18, in test_first_tuesday_of_may_2013
+    meetup_day(2013, 5, 'Tuesday', '1st'))
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 30, in meetu
+p_day                                                                          
+    return date(year, month, days[0])
+ValueError: day is out of range for month
+
+======================================================================
+FAIL: test_monteenth_of_may_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 10, in test_monteenth_of_may_2013
+    meetup_day(2013, 5, 'Monday', 'teenth'))
+AssertionError: datetime.date(2013, 5, 13) != None
+
+======================================================================
+FAIL: test_saturteenth_of_february_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 14, in test_saturteenth_of_february_2013
+    meetup_day(2013, 2, 'Saturday', 'teenth'))
+AssertionError: datetime.date(2013, 2, 16) != None
+
+======================================================================
+FAIL: test_third_thursday_of_september_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 26, in test_third_thursday_of_september_2013
+    meetup_day(2013, 9, 'Thursday', '3rd'))
+AssertionError: datetime.date(2013, 9, 19) != datetime.date(2013, 9, 12)
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.003s
+
+FAILED (failures=3, errors=2)
+bash-3.2$ python meetup_test.py
+Traceback (most recent call last):
+  File "meetup_test.py", line 4, in <module>
+    from meetup import meetup_day
+  File "/Users/andreawerner/exercism/python/meetup/meetup.py", line 26
+    if focus_month[i][weekdays[day]]):
+                                    ^
+SyntaxError: invalid syntax
+bash-3.2$ python meetup_test.py
+.....FF..
+======================================================================
+FAIL: test_monteenth_of_may_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 10, in test_monteenth_of_may_2013
+    meetup_day(2013, 5, 'Monday', 'teenth'))
+AssertionError: datetime.date(2013, 5, 13) != None
+
+======================================================================
+FAIL: test_saturteenth_of_february_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 14, in test_saturteenth_of_february_2013
+    meetup_day(2013, 2, 'Saturday', 'teenth'))
+AssertionError: datetime.date(2013, 2, 16) != None
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.002s
+
+FAILED (failures=2)
+bash-3.2$ python meetup_test.py
+......F..
+======================================================================
+FAIL: test_saturteenth_of_february_2013 (__main__.MeetupTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "meetup_test.py", line 14, in test_saturteenth_of_february_2013
+    meetup_day(2013, 2, 'Saturday', 'teenth'))
+AssertionError: datetime.date(2013, 2, 16) != datetime.date(2013, 2, 9)
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.003s
+
+FAILED (failures=1)
+bash-3.2$ python meetup_test.py
+.........
+----------------------------------------------------------------------
+Ran 9 tests in 0.002s
+
+OK
+bash-3.2$ ls              
+README.md       meetup.py       meetup.pyc      meetup_test.py
+bash-3.2$ exercism submit meetup.py
+
+Submitted Meetup in Python.
+Your submission can be found online at http://exercism.io/submissions/d63c0697c
+0934724bb0857ca6574872f                                                       
+
+To get the next exercise, run "exercism fetch" again.
+bash-3.2$ ls
+README.md       meetup.py       meetup.pyc      meetup_test.py
+bash-3.2$ cd ..
+bash-3.2$ ls
+bob                     leap                    word-count
+gigasecond              meetup
+hamming                 rna-transcription
+bash-3.2$ cd ./hamming
+bash-3.2$ ls
+README.md       hamming.py      hamming.pyc     hamming_test.py
+bash-3.2$ python hamming_test.py
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK
+bash-3.2$ python hamming_test.py
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK
+bash-3.2$ exercism submit hamming.py
+
+Submitted Hamming in Python.
+Your submission can be found online at http://exercism.io/submissions/f8eb3cfe4
+File Edit Options Buffers Tools Help                                           
+file
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----:**-F1  *scratch*      All L4     (Lisp Interaction)-----------------------
+
+[1]+  Stopped                 emacs difference_of_squares.py
+bash-3.2$ %emacs
+emacs difference_of_squares.py
+
+File Edit Options Buffers Tools Help                                           
+file
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----:**-F1  *scratch*      All L4     (Lisp Interaction)-----------------------
+bash-3.2$ ls
+README.md                       difference_of_squares_test.py
+difference_of_squares.py
+bash-3.2$ 
+bash-3.2$ ls
+README.md                       difference_of_squares_test.py
+difference_of_squares.py
+bash-3.2$ python difference_of_squares_test.py
+Traceback (most recent call last):
+  File "difference_of_squares_test.py", line 3, in <module>
+    from difference_of_squares import difference, square_of_sum, sum_of_squares
+  File "/Users/andreawerner/exercism/python/difference-of-squares/difference_of
+_squares.py", line 6                                                          
+    return reduce(x, y: x+y, range(1, number))**2
+                      ^
+SyntaxError: invalid syntax
+bash-3.2$ python difference_of_squares_test.py
+FFFFFF
+======================================================================
+FAIL: test_difference_100 (__main__.DifferenceOfSquaresTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "difference_of_squares_test.py", line 24, in test_difference_100
+    self.assertEqual(25164150, difference(100))
+AssertionError: 25164150 != 24174150
+
+======================================================================
+FAIL: test_difference_5 (__main__.DifferenceOfSquaresTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "difference_of_squares_test.py", line 15, in test_difference_5
+    self.assertEqual(170, difference(5))
+AssertionError: 170 != 70
+
+======================================================================
+FAIL: test_square_of_sum_100 (__main__.DifferenceOfSquaresTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "difference_of_squares_test.py", line 18, in test_square_of_sum_100
+    self.assertEqual(25502500, square_of_sum(100))
+AssertionError: 25502500 != 24502500
+
+======================================================================
+FAIL: test_square_of_sum_5 (__main__.DifferenceOfSquaresTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "difference_of_squares_test.py", line 9, in test_square_of_sum_5
+    self.assertEqual(225, square_of_sum(5))
+AssertionError: 225 != 100
+
+======================================================================
+FAIL: test_sum_of_squares_100 (__main__.DifferenceOfSquaresTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "difference_of_squares_test.py", line 21, in test_sum_of_squares_100
+    self.assertEqual(338350, sum_of_squares(100))
+AssertionError: 338350 != 328350
+
+======================================================================
+FAIL: test_sum_of_squares_5 (__main__.DifferenceOfSquaresTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "difference_of_squares_test.py", line 12, in test_sum_of_squares_5
+    self.assertEqual(55, sum_of_squares(5))
+AssertionError: 55 != 30
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.002s
+
+FAILED (failures=6)
+bash-3.2$ python difference_of_squares_test.py
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+bash-3.2$ ls                              
+README.md                       difference_of_squares.pyc
+difference_of_squares.py        difference_of_squares_test.py
+bash-3.2$ exercism submit difference_of_squares.py
+
+Submitted Difference Of Squares in Python.
+Your submission can be found online at http://exercism.io/submissions/07cb74fd5
+abc4b32a4e3f22f9b17db1f                                                       
+
+To get the next exercise, run "exercism fetch" again.
+bash-3.2$ exercism fetch
+
+                          New: 1 problem
+              Anagram (python) /Users/andreawerner/exercism/python/anagram
+
+unchanged: 28, updated: 0, new: 1
+
+bash-3.2$ ls   
+README.md                       difference_of_squares.pyc
+difference_of_squares.py        difference_of_squares_test.py
+bash-3.2$ cd ..
+bash-3.2$ ls
+anagram                 gigasecond              meetup
+bob                     hamming                 rna-transcription
+difference-of-squares   leap                    word-count
+bash-3.2$ cd ./anagram
+bash-3.2$ emacs anagram.py
+
+File Edit Options Buffers Tools Minibuf Help                                   
+def detect_anagrams(base, comparison):
+    pass
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----:**-F1  anagram.py     All L2     (Python)---------------------------------
+I-search: 
