@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cat Clicker</title>
+  </head>
+  <body>
+    <ul id="catList" style="display:inline-block"></ul>
+    <div id="showCat" style="display:inline-block; padding-left: 40px"></div>
+  </body >
+  <script type="text/javascript">
+  var cats = [
+    {
+      name: "Cat 1",
+      src: "https://lh3.ggpht.com/nlI91wYNCrjjNy5f-S3CmVehIBM4cprx-JFWOztLk7vFlhYuFR6YnxcT446AvxYg4Ab7M1Fy0twaOCWYcUk=s0#w=640&h=426",
+      clickCount: 0
+    },
+    {
+      name: "Cat 2",
+      src: "https://lh3.ggpht.com/kixazxoJ2ufl3ACj2I85Xsy-Rfog97BM75ZiLaX02KgeYramAEqlEHqPC3rKqdQj4C1VFnXXryadFs1J9A=s0#w=640&h=496",
+      clickCount: 0
+    },
+    {
+      name: "Cat 3",
+      src: "https://lh3.ggpht.com/kixazxoJ2ufl3ACj2I85Xsy-Rfog97BM75ZiLaX02KgeYramAEqlEHqPC3rKqdQj4C1VFnXXryadFs1J9A=s0#w=640&h=496",
+      clickCount: 0
+    },
+    {
+      name: "Cat 4",
+      src: "https://lh3.ggpht.com/kixazxoJ2ufl3ACj2I85Xsy-Rfog97BM75ZiLaX02KgeYramAEqlEHqPC3rKqdQj4C1VFnXXryadFs1J9A=s0#w=640&h=496",
+      clickCount: 0
+    },
+    {
+      name: "Cat 5",
+      src: "https://lh3.ggpht.com/kixazxoJ2ufl3ACj2I85Xsy-Rfog97BM75ZiLaX02KgeYramAEqlEHqPC3rKqdQj4C1VFnXXryadFs1J9A=s0#w=640&h=496",
+      clickCount: 0
+    }
+  ];
+
+  // generate list of cats
+  var catList = document.getElementById('catList');
+  for (var i = 0; i < cats.length; i++) {
+    var cat = cats[i];
+    var catElement = document.createElement('li');
+
+    catElement.textContent = cats[i].name;
+    catElement.addEventListener('click', (function(iCopy) {
+        return function() {
+            displayCat(iCopy);
+        };
+      })(i));
+    catList.appendChild(catElement);
+  }
+
+  // display cat
+  var displayCat = function(catNumber) {
+    var catDiv = document.getElementById('showCat');
+    catDiv.textContent = '';
+    var catNameDiv = document.createElement('p');
+    var catImageDiv = document.createElement('img');
+    var catClickCountDiv = document.createElement('p');
+
+    catNameDiv.textContent = cats[catNumber].name;
+    catImageDiv.setAttribute('src', cats[catNumber].src);
+    catImageDiv.addEventListener('click', (function(numCopy) {
+      return function() {
+          catIsClicked(numCopy);
+      };
+    })(catNumber));
+
+    catDiv.appendChild(catNameDiv);
+    catDiv.appendChild(catImageDiv);
+    catDiv.appendChild(catClickCountDiv);
+  };
+
+  var catIsClicked = function(catNumber) {
+      cats[catNumber].clickCount++;
+      document.getElementById('showCat').getElementsByTagName('p')[1].textContent = "Cat Click Count: " + cats[catNumber].clickCount;
+  };
+
+  </script>
+</html>
